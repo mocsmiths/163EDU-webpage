@@ -24,9 +24,10 @@ a,a:hover{color:#333;}
 .top1{background-color: #ccc; margin-top: 0px;}
 .top1 a{color:green; padding: 0 10px;}
 .lunbo{width:100%;}
-.jiesao{display: flex;}
-.kcl{display: flex;flex-direction: column;width: 100%;height: 100%;}
-.mbody{display: flex;}
+.jiesao{display: flex;justify-content: center;}
+.tp{display: flex;justify-content: center;}
+.kcl{display: flex;flex-direction: column;}
+.mbody{display: flex;justify-content: center;}
 .mbleft{width: 50%;}
 .mbright{float: right;width: 20%;}
-.foot{display: flex;}
+.foot{display: flex;align-items: center;justify-content: center;}
