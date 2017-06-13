@@ -21,8 +21,13 @@ body{background:#fff;}
 a,a:hover{color:#333;}
 /*正式开始*/
 *{border:1px solid black; }
-.top1{background-color: #ccc; margin-top: 0px;}
+.topone {background-color: #ccc;display: flex;}
+.toptow {display: flex;}
+.top1{ margin: 0px 10%;}
 .top1 a{color:green; padding: 0 10px;}
+.top11 {margin:0px 20%;}
+.top2{ margin: 0px 10%;}
+.top22 {margin:0px 20%;}
 .lunbo{width:100%;}
 .jiesao{display: flex;justify-content: center;}
 .tp{display: flex;justify-content: center;}
