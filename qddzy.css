@@ -21,19 +21,19 @@ body{background:#fff;}
 a,a:hover{color:#333;}
 /*正式开始*/
 *{border:1px solid black; }
-.topone {background-color: #ccc;display: flex;}
-.toptow {display: flex;}
-.top1{ margin: 0px 10%;}
-.top1 a{color:green; padding: 0 10px;}
-.top11 {margin:0px 20%;}
-.top2{ margin: 0px 10%;}
-.top22 {margin:0px 20%;}
-.lunbo{width:1517px;}
-.jiesao{display: flex;justify-content: center;}
-.tp{display:flex ;justify-content: center;width: 1517px;}
-.tp img{width: 300px;padding: 0 2px;}
-.kcl{display: flex;flex-direction: column;}
-.mbody{display: flex;justify-content: center;}
-.mbleft{width: 50%;}
-.mbright{float: right;width: 20%;}
+.tip {background-color: #ccc;display: flex;}
+.g-head {display: flex;}
+.text-tip{ margin: 0px 10%;}
+.text-tip a{color:green; padding: 0 10px;}
+.notip {margin:0px 20%;}
+.m-head{ margin: 0px 10%;}
+.head-link {margin:0px 20%;}
+.m-banner{width:1517px;}
+.g-product{display: flex;justify-content: center;}
+.g-pic{display:flex ;justify-content: center;width: 1517px;}
+.g-pic img{width: 300px;padding: 0 2px;}
+.l-body{display: flex;flex-direction: column;}
+.m-body{display: flex;justify-content: center;}
+.mb-left{width: 50%;}
+.mb-right{float: right;width: 20%;}
 .foot{display: flex;align-items: center;justify-content: center;}
