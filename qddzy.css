@@ -30,7 +30,8 @@ a,a:hover{color:#333;}
 .top22 {margin:0px 20%;}
 .lunbo{width:1517px;}
 .jiesao{display: flex;justify-content: center;}
-.tp{display: flex;justify-content: center;}
+.tp{display:flex ;justify-content: center;width: 1517px;}
+.tp img{width: 300px;padding: 0 2px;}
 .kcl{display: flex;flex-direction: column;}
 .mbody{display: flex;justify-content: center;}
 .mbleft{width: 50%;}
