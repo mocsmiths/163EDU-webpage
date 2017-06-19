@@ -232,7 +232,7 @@ float: left;}
     height: 262px;
     color: #fff;
     color: rgba(255, 255, 255, 0.6);
-    *color: #fff;/*    IE7 hack*/
+    *color: #fff;
 }
 
 .u-into{
@@ -268,7 +268,7 @@ float: left;}
     display: block;
     color: #fff;
     color: rgba(255, 255, 255, 0.6);
-    *color: #fff;/*    IE7 hack*/
+    *color: #fff;
 }
 
 .u-links .tit {
