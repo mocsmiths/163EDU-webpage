@@ -288,3 +288,36 @@ float: left;}
 .u-links .weibo{
     background: url(pic/weibo.png) no-repeat 42px;
 }
+/*背景遮罩效果*/
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(pic/background.png);
+    z-index:10;
+}
+/*视频模块*/
+.video1 .closed {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 23px;
+    height: 22px;
+    text-indent: -9999px;
+    background: url(pic/closed.png);
+    cursor: pointer;
+}
+
+.video1 {
+    position: relative;
+    margin: 0 auto;
+    width: 890px;
+    height: 616px;
+    padding: 30px;
+    background-color: #fff;
+}
+.video1 video{
+    margin-top:25px;
+}
