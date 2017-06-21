@@ -166,7 +166,7 @@ margin-top: 35px;
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }
-.m-banner .list .list1 a{
+.m-banner .list .show a{
     z-index: 1;
     opacity: 1;
 }
