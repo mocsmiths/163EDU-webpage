@@ -53,7 +53,7 @@ var slide_module = (function(){
                     aLi[i].className = '';
                 };
                 this.parentNode.className = 'selected';
-                ali[this.index].className = 'show';
+                aLi[this.index].className = 'list1';
                 iNow = this.index;
             }
         };
@@ -71,7 +71,7 @@ var slide_module = (function(){
                 aLi[i].className = '';
             };
             aA[iNow].parentNode.className = 'selected';
-            aLi[iNow].className = 'show';
+            aLi[iNow].className = 'list1';
         }
         oDiv.onmouseover = function(){
             if(Runing){
