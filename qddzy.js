@@ -10,7 +10,7 @@ var tips_module = (function(){
     };
 
     addClickEvent(closeTip,function(event){
-        setCookie('noTip',1,new Date(9999,9));
+        setCookie('notip',1,new Date(9999,9));
         tips.style.marginTop = '-30px';
     });
 
