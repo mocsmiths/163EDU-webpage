@@ -249,8 +249,9 @@ padding-top: 50px;}
 .l-body{display: flex;flex-direction: column;
 float: left;}
 .m-body{display: flex;justify-content: center;}
+/*播放栏*/
 .r-body{
-    width: 223px;
+    width: 220px;
     height: 229px;
     box-shadow: 0px 1px 1px 0px rgba(6, 0, 1, 0.2);
     background: #fff;
@@ -276,6 +277,59 @@ float: left;}
 .playbox img{
     cursor: pointer;
 }
+/*滚动栏*/
+.r-top {
+    width: 220px;
+    margin-top: 21px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px rgba(6, 0, 1, 0.2);
+}
+.hot-top {
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+    padding: 0 20px;
+    border-bottom: 1px solid #dddddd;
+}
+.g-htop {
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+.m-htop {
+    position: absolute;
+    bottom: -900px;
+    width: 223px;
+}
+.m-htop .item {
+    padding: 20px;
+    text-overflow: ellipsis;
+    /*查查上面这个是什么*/
+    overflow: hidden;
+    white-space: nowrap;
+}
+.m-htop .tt {
+    margin-left: 60px;
+}
+.m-htop .num {
+    margin: 10px 0 0 60px;
+    height: 17px;
+    line-height: 18px;
+    padding-left: 16px;
+    font-size: 12px;
+    color: #999;
+    background: url(../images/people.png) no-repeat 0 1px;
+}
+
+
+
+
+
+
+
+
+
+
 /*底栏*/
 .g-footer {
     position: absolute;
