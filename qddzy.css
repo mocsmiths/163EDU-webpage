@@ -431,3 +431,21 @@ float: left;}
 .video1 video{
     margin-top:25px;
 }
+/*响应式设计*/
+@media screen and (max-width: 1205px){
+    .g-content,.g-header .m-header,.g-header .m-products,.g-flow{
+        width: 960px;
+    }
+    .g-header .u-product{
+        width: 171px;
+    }
+    .g-header .product1,.g-header .product2{
+        margin-right: 73px;
+    }
+    .g-footer .m-foot .u-into{
+        padding-left: 0;
+    }
+    .g-header,.g-pactures,.g-footer{
+        min-width: 960px;
+    }
+}
