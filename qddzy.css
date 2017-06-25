@@ -318,7 +318,7 @@ float: left;}
     padding-left: 16px;
     font-size: 12px;
     color: #999;
-    background: url(../images/people.png) no-repeat 0 1px;
+    background: url(pic/people.png) no-repeat 0 1px;
 }
 
 
@@ -452,3 +452,11 @@ float: left;}
 .g-head,.g-pic,.g-footer{
     min-width: 1205px;
 }
+/*底部分页*/
+.m-pager {
+    float: right;
+    padding: 30px 0;
+}
+
+.m-pager{
+    line-height: 20px;
