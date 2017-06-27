@@ -226,7 +226,7 @@ margin-top: 35px;
     margin: 50px 0;
 padding-top: 50px;}
 .g-pic img{width: 300px;padding: 0 2px;}
-/*课程栏*/
+/*课程栏(分页)*/
 .tab{
     margin-bottom: 30px;
     font-size: 20px;
@@ -245,10 +245,97 @@ padding-top: 50px;}
     color: #fff;
     background-color: #39a030;
 }
-
+/* 课程栏（主体）*/
 .l-body{display: flex;flex-direction: column;
 float: left;}
 .m-body{display: flex;justify-content: center;}
+.u-cover {
+    position: relative;
+    float: left;
+    margin: 0 0 20px 20px;
+    width: 225px;
+    height: 228px;    
+    background-color: #fff;
+}
+
+.u-cover .wrap {
+    display: block;
+    height: 228px;
+    overflow: hidden;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.u-cover .wrap:hover{
+    box-shadow: 0px 0px 2px 0px rgba(12, 4, 8, 0.3);
+}
+
+.u-cover .imgpic {
+    width: 223px;
+    height: 124px;
+    padding: 1px;
+}
+
+.u-cover .tt {
+    height: 13px;
+    padding: 5px;
+}
+
+.f-oh {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.f-fs0 {    
+    font-size: 12px;
+}
+
+.u-cover .orgname {
+    height: 13px;
+    padding: 6px;
+    color: #999999;
+}
+
+.u-cover .num {
+    padding: 6px;
+    font-size: 12px;
+    color: #999;
+}
+
+.u-cover .price {
+    padding: 5px 6px;
+}
+
+.u-cover .pri {
+    height: 11px;
+    color: #ff3f00;
+}
+
+.m-data-lists {
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+/*底部分页*/
+.m-pager{
+    line-height: 20px;
+}
+.m-pager .prv,.m-pager .nxt {
+    width: 30px;
+    height: 20px;
+    text-indent: -9999px;
+}
+.m-pager .prv{
+    background:#9dd8b1 url(../images/a.png) no-repeat center;
+}
+.m-pager .nxt{
+    background:#9dd8b1 url(../images/b.png) no-repeat center;
+}
+.m-pager a{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    text-align: center;
+}
 /*播放栏*/
 .r-body{
     width: 220px;

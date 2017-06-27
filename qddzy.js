@@ -87,6 +87,95 @@ var slide_module = (function(){
         };
     }
 })();
+/*课程列表及分页模块*/
+var course_module = (function(){
+
+    var url = "http://study.163.com/webDev/couresByCategory.htm";
+    var pageSize = 20;
+    var pageType = 10;
+
+    var mnav = document.querySelector('.tab');
+    var mnavTag = mnav.getElementsByTagName('a');
+    var mpager = document.querySelector('.m-pager');
+
+    delegateEvent(mnav,'a','click',
+        function(target,event){
+            if(pageType != target.getAttribute('data')){
+                for(i=0;i<mnavTag.length;i++){
+                    removeClass(mnavTag[i],'selected');        
+                }
+                addClass(target,'selected');
+                pageType = target.getAttribute('data');
+                mpager.innerHTML = '';
+                getPageNum(1);
+            }
+            preventDefault(event);
+        }
+    );
+
+    //获取分页器总页数以及课程列表第一页
+    function getPageNum(now){    
+        var options = {pageNo:now,psize:pageSize,type:pageType};
+        get(url,options,function(response){
+                initPager(response,now);
+            }
+        );    
+    }
+    //初始化分页和课程列表
+    function initPager(response,now){
+        var res = JSON.parse(response);
+        var option = {id:mpager,nowNum:now,allNum:res.totalPage,childLength:8,callback:getCourse};
+        //初始化课程列表
+        drawCourse(response);
+        //初始化分页
+        page(option);
+    }
+    //获取课程列表
+    function getCourse(now,all){
+        console.log('分页器：'+now);
+        
+        var options = {pageNo:now,psize:pageSize,type:pageType};
+        get(url,options,drawCourse);
+    }
+    //生成课程列表
+    function drawCourse(response){
+        var data = JSON.parse(response);
+        console.log(data);
+        console.log('获取的页码：'+data.pagination.pageIndex);
+        
+        var boo = document.querySelectorAll('.u-cover');
+        for(var i=boo.length-1;i>0;i--){
+            boo[i].parentNode.removeChild(boo[i]);
+        }
+        
+        var templete = document.querySelector('.m-data-lists .f-templete');
+            
+        for(var i=0,list=data.list;i<list.length;i++){       
+            var cloned = templete.cloneNode(true);
+            removeClass(cloned,'f-templete');
+            var imgpic = cloned.querySelector('.imgpic');
+            var title = cloned.querySelector('.tt');
+            var orgname = cloned.querySelector('.orgname');
+            var hot = cloned.querySelector('.hot');
+            var pri = cloned.querySelector('.pri');
+            var kindname = cloned.querySelector('.kindname');
+            var disc = cloned.querySelector('.disc');
+            
+            imgpic.src = list[i].middlePhotoUrl;
+            imgpic.alt = list[i].name;
+            title.innerText = list[i].name;
+            orgname.innerText = list[i].provider;
+            hot.innerText = list[i].learnerCount;
+            pri.innerText = '￥' + list[i].price + '.00'; 
+            kindname.innerText = list[i].categoryName;
+            disc.innerText = list[i].description;      
+            templete.parentNode.appendChild(cloned);
+        }
+    }
+
+    getPageNum(1);    
+
+})();
 // 右边热门推荐及滚动模块
 var top_module = (function(){
     var url = 'http://study.163.com/webDev/hotcouresByCategory.htm';
