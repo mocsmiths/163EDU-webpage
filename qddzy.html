@@ -28,8 +28,29 @@
 			</div>
 			<span class="fans">粉丝 45</span>
 		</div>
-
-
+<!-- 关注模块 -->
+<div class="m-mask" style="display:none;">
+        <div class="m-login">
+            <form action="http://study.163.com/webDev/login.htm" class="m-form" name="loginForm" target="result" autocomplete="off" method="get">
+            <legend>
+                <h2 class="tit">登录网易云课堂</h2>
+            </legend>
+              <fieldset>
+                <div class="txt itm1">
+                  <label class="lab" for="account">账号</label>
+                  <input class="u-txt input" id="account" name="userName" type="text" autocomplete="off">
+                </div>
+                <div class="txt itm2">
+                  <label class="lab" for="password">密码</label>
+                  <input class="u-txt input" id="password" name="password" type="password" autocomplete="off">
+                </div>
+                <div class="wrap"><button class="btn" name="loginBtn">登 录</button></div>
+                <span class="closed">X</span>
+              </fieldset>
+            </form>
+            <iframe name="result" id="result" style="display:none;"></iframe>            
+        </div>
+    </div>
 	<div class="head-link">
 	<a target="_blank" href="http://open.163.com/" class="head-links">
 		网易公开课</a>
@@ -112,7 +133,7 @@
 <div class="m-body">
 	<div class="mb-left">
 		<div class="tab">
-			<a href="javascript:;" class="tab-a" data="10">产品设计</a>
+			<a href="javascript:;" class="tab-a selected" data="10">产品设计</a>
 			<a href="javascript:;" class="tab-b" data="20">编程语言</a>
 		</div>
 	<div class="l-body">
