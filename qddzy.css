@@ -609,15 +609,15 @@ padding-top: 50px;}
 .u-search:hover{
     background: url(pic/search2.png) no-repeat center center;
 }
-.m-header .cal:hover,.u-product .more:hover,.u-links .link:hover{
+.head-logo .cal:hover,.u-product .more:hover,.u-links .link:hover{
     text-decoration: underline;
 }
 
-.m-header .cal:hover{
+.head-logo .cal:hover{
     color: #21a557;
 }
 
-.m-header .follow:hover {
+.head-logo .follow:hover {
     background-color: #2fb556;
 }
 .u-cover .wrap:hover {
@@ -689,6 +689,30 @@ padding-top: 50px;}
     background-color: #f8f8f8;
 }
 /*登录遮罩模块*/
+.g-head .followed {
+    float: left;
+    width: 106px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    background-color: #f8f8f8;
+    font-family: SimSun;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.g-head .txt {
+    font-size: 12px;
+}
+
+.g-head .cal {
+    font-size: 12px;
+    color: #999999;
+}
+
+.g-head .sep {
+    color: #cccccc;
+    font-size: 10px;
+}
 .m-login {
     position: absolute;
     top: 50%;
@@ -755,9 +779,7 @@ padding-top: 50px;}
     margin: 0 auto;    
 }
 
-.m-form {
-    
-}
+
 
 .m-form .closed {
     position: absolute;

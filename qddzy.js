@@ -22,7 +22,7 @@ var follow_module = (function(){
 
     var follow = document.querySelector('.follow');
     var closeTip = document.querySelector('.notip');
-    var loginMask = document.querySelector('.m-mask');
+    var loginMask = document.querySelector('.mask');
 
     // 登录模块
     var login_module = (function(){
