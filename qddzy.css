@@ -23,32 +23,37 @@ a,a:hover{color:#333;}
 html{
     cursor: default;
 }
-body{position: relative;height: 100%;}
+body{position: relative;}
 /*消息提示栏*/
 .tip {
     background-color: #f3f3f3;
-    position: relative;
     height: 30px;
+    position: relative;
     }
 .text-tip{
     margin-left: 100px;
-    line-height: 30px;}
+    line-height: 30px;
+    display: inline;
+}
 .text-tip a{
     color:green;
     padding: 0 10px;}
 .notip {
     margin-right: 100px;
     position: absolute;
+    top: 0;
     right: 0;
-    top:0;
     line-height: 30px;
     cursor: pointer;
     padding-left: 15px;
     background: url(pic/close.png) no-repeat 0 center;}
 /*TOP主体*/
-.g-head {display: flex;
-    height: 90px;
-    margin: 0 100px 0 0 ;
+.g-head {   
+    position: relative;
+    height: 95px;
+    width: 1186px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .head-logo{
     float: left;
@@ -109,27 +114,26 @@ margin-top: 35px;
 }
 
 .head-link{
-    position: absolute;
-    right: 120px;
-}
-.head-links {
     float: right;
-    padding: 40px 45px 0;
-    font-size: 18px;
-    line-height: 20px;
-    color: #666666;
+    padding: 40px;
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+}
+.head-links{padding-left: 55px;}
 }
 .head-links:hover{
-    color: rgb(57,160,48);
+    color: green;
 }
 
 .search {
     position: absolute;
-    right: 100px;
-    top: 70px;
+    top: 40px;
+    right: 0;
+    display: block;
     width: 19px;
     height: 19px;
-    background: url(pic/search.png) no-repeat ;
+    background: url(pic/search.png) no-repeat center center;
     cursor: pointer;
 }
 .search:hover{
@@ -469,15 +473,6 @@ padding-top: 50px;}
     background: url(pic/people.png) no-repeat 0 1px;
 }
 
-
-
-
-
-
-
-
-
-
 /*底栏*/
 .g-footer {
     position: relative;
@@ -581,10 +576,10 @@ padding-top: 50px;}
 }
 /*响应式设计*/
 @media screen and (max-width: 1205px){
-    .text-tip,.g-head .head-logo,.g-product,.m-body,.g-flow{
+    .tip,.g-head,.g-product,.m-body{
         width: 960px;
     }
-    .g-head .g-product{
+    .product1,.product2,.product3{
         width: 171px;
     }
     .product1,.product2{
@@ -593,7 +588,7 @@ padding-top: 50px;}
     .g-footer .m-foot .u-into{
         padding-left: 0;
     }
-    .g-head,.g-pic,.g-footer{
+    .g-head,.m-banner,.g-product{
         min-width: 960px;
     }
 }
