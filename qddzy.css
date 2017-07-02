@@ -51,13 +51,12 @@ body{position: relative;}
 .g-head {   
     position: relative;
     height: 95px;
-    width: 1186px;
-    margin: 0 auto;
+    margin: 0 100px;
     overflow: hidden;
 }
 .head-logo{
     float: left;
-    margin-left: 100px;
+    margin-left: 0;
     width: 240px;
 }
 .m-head{
@@ -115,16 +114,15 @@ margin-top: 35px;
 
 .head-link{
     float: right;
-    padding: 40px;
-    font-size: 16px;
+    padding: 35px;
+    font-size: 18px;
     line-height: 25px;
-    color: black;
 }
 .head-links{padding-left: 55px;}
-}
 .head-links:hover{
-    color: green;
+    color:green;
 }
+
 
 .search {
     position: absolute;
@@ -189,16 +187,12 @@ margin-top: 35px;
     margin-left: -826px;
     
 }
-
-
-
-
-
-
 /*产品介绍*/
 .g-product{
     width: 1500px;
-    margin: 50px 100px;}
+    margin-left:150px;
+    padding-top: 60px;
+}
 .product1{
     float: left;
     width: 240px;
@@ -608,14 +602,11 @@ padding-top: 50px;}
     background: none;
     cursor: default;
 }
-.u-search:hover{
-    background: url(pic/search2.png) no-repeat center center;
-}
-.head-logo .cal:hover,.u-product .more:hover,.u-links .link:hover{
+.g-follow .cal:hover,.u-product .more:hover,.u-links .link:hover{
     text-decoration: underline;
 }
 
-.head-logo .cal:hover{
+.g-follow .cal:hover{
     color: #21a557;
 }
 
