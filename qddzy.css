@@ -450,7 +450,6 @@ padding-top: 50px;}
 .m-htop .item {
     padding: 20px;
     text-overflow: ellipsis;
-    /*查查上面这个是什么*/
     overflow: hidden;
     white-space: nowrap;
 }
