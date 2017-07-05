@@ -253,7 +253,7 @@ var course_module = (function(){
     var mnav = document.querySelector('.tab');
     var mnavTag = mnav.getElementsByTagName('a');
     var mpager = document.querySelector('.m-pager');
-
+//下面增加的这个事件是用于TAB页面切换时使用的
     delegateEvent(mnav,'a','click',
         function(target,event){
             if(pageType != target.getAttribute('data')){
