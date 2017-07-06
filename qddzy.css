@@ -256,7 +256,6 @@ padding-top: 50px;}
     margin:auto 100px;
 }
 .l-body{
-    display: flex;
     flex-direction: column;
     float: left;}
 .f-templete{
