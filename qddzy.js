@@ -7,8 +7,8 @@ var tips_module = (function(){
 
     var cookie = getCookie();
 
-    if (!cookie.noTips) {
-        tips.style.display = 'block';
+    if (!cookie.noTip) {
+        tip.style.display = 'block';//tips改为tip,7.8小更新
     };
 
     addClickEvent(closeTip,function(event){
