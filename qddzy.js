@@ -294,6 +294,7 @@ var course_module = (function(){
         get(url,options,drawCourse);
     }
     //生成课程列表
+    //7.9小记录
     function drawCourse(response){
         var data = JSON.parse(response);
         console.log(data);
