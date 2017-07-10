@@ -8,7 +8,7 @@ var tips_module = (function(){
     var cookie = getCookie();
 
     if (!cookie.noTip) {
-        tip.style.display = 'block';//tips改为tip,7.8小更新
+        tips.style.display = 'block';
     };
 
     addClickEvent(closeTip,function(event){
@@ -294,7 +294,6 @@ var course_module = (function(){
         get(url,options,drawCourse);
     }
     //生成课程列表
-    //7.9小记录
     function drawCourse(response){
         var data = JSON.parse(response);
         console.log(data);
